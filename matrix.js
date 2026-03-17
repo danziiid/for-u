@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const word = "LOVE"; 
-const fontSize = 16; 
+const fontSize = 15; 
 const columns = Math.floor(canvas.width / fontSize);
 
 const drops = Array(columns).fill(0).map(() => Math.floor(Math.random() * -20));
