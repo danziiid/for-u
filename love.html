@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Now You Are My Girlfriend</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Pastikan canvas menumpuk dengan benar */
-        #matrixCanvas { z-index: 1; }
-        #fireworkCanvas { z-index: 2; pointer-events: none; } 
-        /* pointer-events: none agar klik tembus ke bawah jika diperlukan, 
-           tapi kita akan pasang listener klik di window */
-    </style>
 </head>
 <body>
     <canvas id="matrixCanvas"></canvas>
-    <canvas id="fireworkCanvas"></canvas>
     
-    <div class="container">
-        <h1 class="glow-text">Now you are my girlfriend</h1>
+    <div id="heartTextContainer" class="hidden">
+        <pre class="glow-text heart-text">
+
+        </pre>
+    </div>
+
+    <div class="container fade-in" id="mainContent">
+        <h1 class="glow-text">You're mine now</h1>
         <button class="click-here" onclick="location.href='flower.html'">Click Here</button>
     </div>
 
     <script src="matrix.js"></script>
-    <script src="firework.js"></script>
 </body>
 </html>
